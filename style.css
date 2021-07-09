@@ -1,0 +1,578 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+*
+
+/*1. Home page*/
+
+/*1.1 Home page- font and position*/
+{ 
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*1.2. Home page- paragraph element*/
+p{
+  font-weight: 300;
+  color: #111;
+}
+
+
+/*3. Body section- adding a extra space for other sections so that the content can be added going down.and be able to 
+scroll downwards.
+
+body{
+	min-height: 1000px;
+}
+
+ */
+
+
+
+
+
+
+/*1.3. Home page- banner class*/
+.banner{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(Images/Homebackground/bg.jpg);
+	background-size: cover;
+}
+/*1.3.1 Home page- content inside the banner*/
+.banner .content{
+	max-width: 900px;
+	text-align: center;
+}
+
+/*1.3.2. Home page- heading inside the content of the banner */
+.banner .content h2{
+	font-size : 5em;
+	color: #fff;
+}
+
+/*1.3.3. Home page- paragraph inside the content of the banner */
+.banner .content p{
+	font-size : 1em;
+	color: #fff;
+}
+
+/*1.4. Home page- button class inside the anchor element which is the our menu button.*/
+.btn {
+	font-size : 1em;
+	color: #fff;
+	background: #ff0157;
+	display: inline-block;
+	padding: 10px 30px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+}
+
+/*1.4.1. Home page- button class inside the anchor element must have a hover feature */
+.btn:hover{
+	letter-spacing: 6px;
+	
+}
+
+/*2. Heading section above the home section  */
+
+/*2.1. Header section settings (position)*/
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+
+/*4. JavaScript: Adding the scroll function  */
+header.sticky {
+	background: #ff0157;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+
+}
+		
+
+/*2.1.1 Header section- logo class which is named Food. inside the anchor element settings*/
+
+header .logo {
+	color: #fff;
+	font-weight: 700;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+/*******************************************************Sharp**************/
+/*4.1. JavaScript: Adding the scroll function ----Sharp */
+header.sticky .logo {
+	color: #111;
+}
+
+/******************************************************* ! **************/
+/*2.1.2. Header section- span element settings inside the logo class of the anchor element---- ! */
+
+header .logo span{
+	color: whitesmoke;
+	font-weight: 500;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+/******************************************************* Home,About, Trainers,Classes etc... **************/
+/*2.2.1. Header section- Navigation items inside the unordered list element to be horizontally listed*/
+
+header .navigation {
+	position: relative;
+	display: flex;
+}
+
+/*2.2.2. Header section- Navigation lists settings to have spacing in between them and to remove the bullet points*/
+
+header .navigation li {
+	list-style: none;
+	margin-left: 30px;
+}
+/******************************************************* Removing the underline feature on the menu list **************/
+/*2.2.3. Header section- Navigation anchors settings to be white and have no underlining feature*/
+header .navigation li a {
+	text-decoration: none;
+	font-weight: 300;
+}
+
+/******************************************************* Navigation anchors settings to be white **************/
+header .navigation li a {
+	color: #fff;
+
+}
+
+
+
+/*4.2. JavaScript: Adding the scroll function  */
+header.sticky navigation li a {
+	color: #111;
+}
+
+
+/********************Changing the color of the Navigation anchors settings to be another color when hovered ********
+/*2.2.3. Header section- Navigation anchors settings to have a hover feature so that when hovered on it changes color 
+from white to pink */
+
+/*
+header .navigation li a:hover{
+	/*color: #ff0157*/
+	/*color: black;}*/
+
+
+/* 2. About page*/
+
+
+/* 2.1. section settings*/
+section{ padding: 100px}
+
+/* 2.2. row class inside the section settings*/
+.row{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* 2.3. col50 class inside the row class inside the section settings*/
+.row .col50{
+	position: relative;
+	width: 48%;
+}
+
+
+/* 2.4. titleText class inside h2 element settings*/
+.titleText {
+	color: #111;
+	font-weight: 300;
+	font-size: 2em;
+}
+
+/* 2.5. titleText class inside h2 element settings*/
+.titleText span{
+	color: #ff0157;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+/* 2.6. imgBx class inside col class of the row class settings*/
+.row .col50 .imgBx{
+	position: relative;
+	width: 100%;
+	/*min-height: 300px;*/
+	height:100%;
+}
+
+/* 2.7. img element of the imgBx class inside col class of the row class settings*/
+.row .col50 .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+}
+
+
+/* 2.8. title class which is 'our menu list and p ' and contact us now info inside the section element settings*/
+.title{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+/* 2.9. menu class and content class inside the section element settings*/
+.trainers .content{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+/* 2.10. menu class ,content class and box class inside the section element settings*/
+
+.trainers .content .box {
+	width: 340px;
+	margin: 20px;
+	border: 15px solid #fff;
+	box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+
+/* 2.11. imgBx settings inside the menu class ,content class and box class inside the section element settings*/
+
+.trainers .content .box .imgBx {
+	position: relative;
+	width: 100%;
+	height: 300px;	
+}
+
+/* 2.12. image setting of imgBx inside the menu class ,content class and box class inside the section element settings*/
+.trainers .content .box .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* 2.13. text class setting inside the menu class ,content class and box class inside the section element settings*/
+.trainers .content .box .text{
+	padding: 15px 0 5px;
+
+}
+
+/* 2.14. text settings for the h3 heading inside the menu class ,content class and box class inside the section element settings*/
+.trainers .content .box .text h3{
+	font-weight: 400;
+	color: #111;
+}
+
+
+/* 3. Classes page*/
+
+/* 3.1. Classes class and content class inside the Classes section element settings*/
+.classes .content{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+
+/* 3.2. Classes class ,content class and box class inside the Classes section element settings*/
+
+.classes .content .box {
+	width: 250px;
+	margin: 15px;
+}
+
+/* 3.3. imgBx settings inside the Classes class ,content class and box class inside the Classes section element settings*/
+
+.classes .content .box .imgBx {
+	position: relative;
+	width: 100%;
+	height: 300px;	
+}
+
+/* 3.4. image setting of imgBx inside the Classes class ,content class and box class inside the Classes section element settings*/
+.classes .content .box .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* 3.5. text class setting inside the Classes class ,content class and box class inside the Classes section element settings*/
+.classes .content .box .text{
+	padding: 15px 0 5px;
+}
+
+/* 3.6. h3 settings inside the h3 heading menu class ,content class and box class inside the Classes section element settings*/
+.classes .content .box .text h3{
+	font-weight: 400;
+	color: #111;
+}
+
+
+/* 4. Recipes page*/
+
+/* 4.0. Changing the background of the Testimonials  and trainers page*/
+.recipes{
+	/*background: url(https://images.unsplash.com/photo-1598511796318-7b8256bd2b20?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);*/
+	background: url(https://images.unsplash.com/photo-1547496502-affa22d38842?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=584&q=80);
+	background-size: cover;
+}
+
+.trainers{
+	background: url(https://images.unsplash.com/photo-1535743686920-55e4145369b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80);
+	background-size: cover;
+}
+
+/* 4.0. Changing the color of the paragraph */
+.white .titleText, .white p{
+	color: #fff;
+}
+
+
+/* 4.1. recipes class and content class inside the recipes section element settings*/
+.recipes .content{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+
+/* 3.2. recipes class ,content class and box class inside the recipes section element settings*/
+
+.recipes .content .box {
+	width: 340px;
+	margin: 20px;
+	padding: 40px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* 3.3. imgBx settings inside the recipes class ,content class and box class inside the recipes section element settings*/
+
+.recipes .content .box .imgBx {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+/* 3.4. image setting of imgBx inside the recipes class ,content class and box class inside the recipes section element settings*/
+.recipes .content .box .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+/* 3.5. text class setting inside the recipes class ,content class and box class inside the recipes section element settings*/
+.recipes .content .box .text{
+	text-align: center;
+}
+
+/* 3.6. p settings inside the menu class ,content class and box class inside the recipes section element settings*/
+
+.recipes .content .box .text p{
+	font-style: italic;
+	color: #666;
+}
+
+
+/* 3.7. h3 settings inside the h3 heading menu class ,content class and box class inside the recipes section element settings*/
+.recipes .content .box .text h3{
+	margin-top: 20px;
+	color: #111;
+	font-size: 1em;
+	color: #ff0157;
+	font-weight: 600;
+}
+
+
+/* 5. Contact page*/
+
+/* 5.1. Changing the background of the contact page*/
+.contact{
+	background: url(https://images.unsplash.com/photo-1563906267088-b029e7101114?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+	background-size: cover;
+
+
+}
+
+
+/* 5.2. Changing the contactForm of the contact page*/
+.contactForm{
+	padding: 75px 50px;
+	background: #fff;
+	box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+	max-width: 500px;
+	margin-top: 50px;
+}
+
+/* 5.3. Changing the contactForm h3 of the contact page*/
+.contactForm h3{
+	color:#111;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+/* 5.4. Changing the contactForm inputBox of the contact page*/
+.contactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+/* 5.5. Changing the input inside contactForm inputBox of the contact page*/
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+	border: 1px solid #555;
+	padding: 10px;
+	color: #111;
+	outline: none;
+	font-size: 16px;
+	font-weight: 300;
+	resize: none;
+}
+
+
+
+.contactForm .inputBox input[type= "submit"] 
+{
+	font-size: 1em;
+	color: #fff;
+	background: #ff0157;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	max-width: 100px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+}
+
+.copyrightText{
+	padding: 8px 40px;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	text-align: center;
+}
+
+.copyrightText p{
+	color: #333;
+}
+
+.copyrightText a{
+	color: #ff0157;
+	font-weight: 500;
+    text-decoration: none;
+}
+
+
+/* 4.0. Changing the color of the paragraph */
+.white .titleText, .white p{
+	color: #fff;
+}
+
+/*************************Transformation page*******************/
+.container{
+    display: flex;
+    width: 90vw;
+	
+}
+
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in; /*easy in effect with a 7s transition*/
+}
+
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+
+}
+
+.container h3{
+	align-items: center;
+    justify-content: center;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+/*ensuring that we only see 3 images on a small screen */
+@media (max-width: 480px) {
+    .container{
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
+
+
+/* The end */
