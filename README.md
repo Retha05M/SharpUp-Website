@@ -48,8 +48,10 @@ The website consists of 7 sections which are as follows below.
 </ol>
 
 
-
+<h1>Live Demo</h1>
 <hr>
+https://retha05m.github.io/SharpUp-Website/
+
 
 <h1>Clone the code:</h1>
 <p> You can clone this project using the below link;</p>
