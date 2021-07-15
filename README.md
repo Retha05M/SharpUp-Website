@@ -49,7 +49,6 @@ The website consists of 7 sections which are as follows below.
 
 
 <h1>Live Demo</h1>
-<hr>
 https://retha05m.github.io/SharpUp-Website/
 
 
